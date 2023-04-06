@@ -1,0 +1,15 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.page-width {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
+}

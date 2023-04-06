@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+  --main-color: #002897;
+  --second-color: #1e90ff;
+  --third-color: #1a82eb;
+  --gray-color: #e6e6e6;
+  --text-color: #333;
+  --font-heading-family: "Anton", sans-serif;
+  --font-family: "Raleway", sans-serif;
+  --content-width: 1400px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(0deg, var(--gray-color), #fff);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading-family);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+button {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

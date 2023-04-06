@@ -1,0 +1,175 @@
+<script setup>
+  import ScrollIcon from './icons/ScrollIcon.vue';
+</script>
+
+<template>
+  <header>
+    <div class="main-title totransition">
+      <h2>Front-end Developer</h2>
+      <h1>Gonzalo Serra</h1>
+    </div>
+
+    <button class="contact-button" @click="showContactPage()">
+      <span>Contact me</span>
+    </button>
+
+    <ScrollIcon />
+  </header>
+</template>
+
+<script>
+export default {
+  methods: {
+    showContactPage() {
+      let contactPage = document.querySelector('.contact-form')
+      if(!contactPage) return
+
+      contactPage.classList.remove('d-none')
+    }
+  }
+}
+</script>
+
+<style scoped>
+  header {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-title {
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+
+  h1 {
+    background: -webkit-linear-gradient(left, var(--second-color),  var(--main-color));
+    background: linear-gradient(to right, var(--second-color), var(--main-color));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    font-size: 10rem;
+    font-weight: 900;
+    animation: showTitle 1300ms ease;
+  }
+
+  h2 {
+    font-size: 2rem;
+    padding-left: 3px;
+    animation: showSubtitle 1300ms ease;
+  }
+
+  .contact-button {
+    background: transparent;
+    border: none;
+    outline: 2px solid #222;
+    color: #222;
+    width: 200px;
+    height: 48px;
+    border-radius: 100px;
+    margin-top: 80px;
+    transition: all 300ms ease;
+    transition-delay: 150ms;
+    animation: showContactButton 1700ms ease;
+    overflow: hidden;
+  }
+
+  .contact-button::after,
+  .contact-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    z-index: -1;
+    transform: translateY(50%);
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+  }
+
+  .contact-button::after {
+    background-color: var(--second-color);
+    transition: all 300ms ease;
+  }
+
+  .contact-button::before {
+    background-color: var(--main-color);
+    transition: all 300ms ease;
+  }
+
+  .contact-button:hover {
+    outline: 2px solid var(--main-color);
+    color: #fff;
+  }
+
+  .contact-button:hover::after {
+    transform: translateY(-100%);
+  }
+  .contact-button:hover::before {
+    transform: translateY(-50%);
+  }
+
+  @keyframes showTitle {
+    0% {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes showSubtitle {
+    0% {
+      transform: translateX(-150px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(-150px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes showContactButton {
+    0% {
+      transform: scaleX(0%);
+      opacity: 0;
+    }
+    70% {
+      transform: scaleX(0%);
+      opacity: 1;
+    }
+    80% {
+      transform: scaleX(140%);
+      opacity: 1;
+    }
+    90% {
+      transform: scaleX(70%);
+      opacity: 1;
+    }
+    95% {
+      transform: scaleX(120%);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(100%);
+      opacity: 1;
+    }
+  }
+</style>
