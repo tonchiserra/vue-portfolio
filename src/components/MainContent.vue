@@ -12,7 +12,10 @@
 
 <style scoped>
     main {
-        margin-top: 100vh;
-        padding: 20px 0;
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        width: 100%;
+        z-index: 2;
     }
 </style>
