@@ -9,7 +9,7 @@
   --text-color: #333;
   --font-heading-family: "Anton", sans-serif;
   --font-family: "Raleway", sans-serif;
-  --content-width: 1400px;
+  --content-width: 1200px;
 }
 
 html {
@@ -30,6 +30,7 @@ html {
 body {
   position: relative;
   background: linear-gradient(0deg, var(--gray-color), #fff);
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
