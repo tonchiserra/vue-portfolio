@@ -1,21 +1,19 @@
 <script setup>
     import ProjectsList from './ProjectsList.vue';
-    import ContactForm from './ContactForm.vue';
+    import NavHeader from './NavHeader.vue';
 </script>
 
 <template>
     <main>
+        <NavHeader />
         <ProjectsList />
-        <ContactForm />
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     main {
-        position: absolute;
-        top: 100vh;
-        left: 0;
-        width: 100%;
-        z-index: 2;
+        margin-top: 100vh;
+        background: #fff;
+        position: relative;
     }
 </style>

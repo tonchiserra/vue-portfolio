@@ -5,11 +5,20 @@
     const projects = [
         {
             title: "Valery Accesorios",
+            subtitle: "Contribution",
             description: "Layout and development of Shopify e-commerce components based on a mockup that the design team provided me. <br/>The highlight component developed by me is the infinite promo bar that appears in the header and others places of the store.",
             technologies: ["shopify", "javascript", "vue", "sass", "css", "html"],
             repo: "",
             demo: "https://valeryaccesorios.com.ar/",
-            images: ["/valery/valery-1.png", "/valery/valery-2.png", "/valery/valery-3.png", "/valery/valery-4.png"]
+            image: "/valery/valery-2.png"
+        },
+        {
+            title: "Titulo",
+            description: "descripcion",
+            technologies: ["tecnologias"],
+            repo: "sisisi",
+            demo: "",
+            image: ""
         },
         {
             title: "Titulo",
@@ -17,7 +26,7 @@
             technologies: ["tecnologias"],
             repo: "sisisi",
             demo: "https://valeryaccesorios.com.ar/",
-            images: []
+            image: ""
         },
         {
             title: "Titulo",
@@ -25,51 +34,47 @@
             technologies: ["tecnologias"],
             repo: "sisisi",
             demo: "https://valeryaccesorios.com.ar/",
-            images: []
-        },
-        {
-            title: "Titulo",
-            description: "descripcion",
-            technologies: ["tecnologias"],
-            repo: "sisisi",
-            demo: "https://valeryaccesorios.com.ar/",
-            images: []
+            image: ""
         }
     ]
 
     let splideProjectsOptions = {
         type: 'loop',
         width: '100vw',
-        perPage: 4,
+        perPage: 1.5,
         perMove: 1,
         focus: 'center',
-        gap: '20px',
+        gap: '100px',
         updateOnMove: true,
         pagination: false,
         autoplay: true,
-        interval: 2500,
+        interval: 4000,
         pauseOnHover: true,
         drag: false
     }
 </script>
 
 <template>
-    <section class="projects">
-        <h2 class="section-title">Projects & contributions</h2>
+    <section id="Experience" class="projects">
+        <div class="section-title page-width">
+            <div class="title">
+                <div class="title__point"></div>
+                <h2 class="title__text">Projects & contributions</h2>
+            </div>
+            <a class="underline" href="https://github.com/tonchiserra">View all</a>
+        </div>
 
         <Splide :options="splideProjectsOptions" class="projects__list" aria-label="Projects & contributions">
             <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
         </Splide>
-
-        <p class="text-center">You can see all my projects and contributions in my <a href="https://github.com/tonchiserra">GitHub</a>.</p>
     </section>
 </template>
 
 <style lang="scss">
     .projects {
         width: 100%;
+        max-width: 1920px;
         min-height: 100vh;
-        padding-top: 50px;
         background: #fff;
         display: flex;
         flex-direction: column;
@@ -83,8 +88,11 @@
             }
 
             .project.is-active {
-                box-shadow: 0 0 3rem rgba(0,0,0,.2);
-                transform: translateY(-10px);
+                opacity: 1;
+            }
+
+            .splide__arrow {
+                background: transparent;
             }
         }
     }

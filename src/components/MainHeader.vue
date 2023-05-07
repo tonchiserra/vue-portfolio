@@ -9,35 +9,13 @@
       <h1>Gonzalo Serra</h1>
     </div>
 
-    <button class="contact-button" @click="showContactPage()">
+    <button class="contact-button">
       <span>Contact me</span>
     </button>
 
     <ScrollIcon />
   </header>
 </template>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-      let contactButton = document.querySelector('.contact-button')
-      if(!contactButton) return
-
-      contactButton.style.animation = 'alertContactButton 5000ms ease infinite'
-    }, 2000)
-  })
-
-  export default {
-    methods: {
-      showContactPage() {
-        let contactPage = document.querySelector('.contact-form')
-        if(!contactPage) return
-
-        contactPage.classList.remove('d-none')
-      }
-    }
-  }
-</script>
 
 <style lang="scss">
   header {
@@ -49,6 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: -1;
 
     .main-title {
       width: max-content;
@@ -178,27 +157,6 @@
     100% {
       transform: scaleX(100%);
       opacity: 1;
-    }
-  }
-
-  @keyframes alertContactButton {
-    0% {
-      outline-offset: 0;
-    }
-    60% {
-      outline-offset: 0;
-    }
-    70% {
-      outline-offset: 10px;
-    }
-    80% {
-      outline-offset: 0;
-    }
-    90% {
-      outline-offset: 10px;
-    }
-    100% {
-      outline-offset: 0;
     }
   }
 </style>

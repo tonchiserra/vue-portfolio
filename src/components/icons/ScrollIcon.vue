@@ -15,6 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        animation: showScrollIcon 2300ms ease;
 
         &__border {
             width: 20px;
@@ -33,6 +34,18 @@
             border-radius: 100px;
             background-color: #222;
             animation: scrollBall 2s ease-in-out infinite;
+        }
+    }
+
+    @keyframes showScrollIcon {
+        0% {
+            transform: translateY(100px);
+        }
+        80% {
+            transform: translateY(100px);
+        }
+        100% {
+            transform: translateY(0);
         }
     }
 
