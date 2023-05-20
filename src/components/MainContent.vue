@@ -1,12 +1,14 @@
 <script setup>
-    import ProjectsList from './ProjectsList.vue';
-    import NavHeader from './NavHeader.vue';
+    import ProjectsList from './ProjectsList.vue'
+    import NavHeader from './NavHeader.vue'
+    import AboutMe from './AboutMe.vue'
 </script>
 
 <template>
     <main>
         <NavHeader />
         <ProjectsList />
+        <AboutMe />
     </main>
 </template>
 

@@ -6,7 +6,7 @@
         {
             title: "Valery Accesorios",
             subtitle: "Contribution",
-            description: "Layout and development of Shopify e-commerce components based on a mockup that the design team provided me. <br/>The highlight component developed by me is the infinite promo bar that appears in the header and others places of the store.",
+            description: "Layout and development of Shopify e-commerce components based on a mockup that the design team provided me. The highlight component developed by me is the infinite promo bar that appears in the header and others places of the store.",
             technologies: ["shopify", "javascript", "vue", "sass", "css", "html"],
             repo: "",
             demo: "https://valeryaccesorios.com.ar/",
