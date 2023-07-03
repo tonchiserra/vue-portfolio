@@ -20,7 +20,7 @@
                     <h3>Who am I?</h3>
                 </div>
                 <div class="about__block-text">
-                    <p>¡Hola! Mi nombre es Gonzalo Serra pero puedes llamarme <strong>Tonchi</strong>. Tengo 22 años y soy un apacionado por el mundo IT.</p>
+                    <p>¡Hi! My name is Gonzalo Serra but you can call me <strong>Tonchi</strong>. I am 22 years old and I am passionate about IT world.</p>
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
                     <h3>My career</h3>
                 </div>
                 <div class="about__block-text">
-                    <p>En 2019 comencé a estudiar <strong>Ingeniería en Sistemas de Información</strong> en la Universidad Tecnológica Nacional FRRo y de forma autodidacta me centro en aprender y mejorar mis habilidades como <strong>Frontend Developer</strong>.</p>
+                    <p>In 2019 I started studying <strong>Information Systems Engineering</strong> at Universidad Tecnológica Nacional FRRo and in a self-taught way I focus on learning and improving my skills as <strong>Web Developer</strong>.</p>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
                     <h3>Learning</h3>
                 </div>
                 <div class="about__block-text">
-                    <p>Actualmente, de forma autodidacta, estoy aprendiendo sobre vue.js y TypeScript. En cuanto a la universidad, estoy aprendiendo sobre Angular.js y Node.js.</p>
+                    <p>Current, in a self-taught way, i am learning about <strong>Vue.js</strong> and <strong>TypeScript</strong>. In the university, I am learning about <strong>Node.js</strong>.</p>
                 </div>
             </div>
         </div>
@@ -79,6 +79,7 @@
                 gap: 20px;
                 background-color: #fff;
                 padding: 0 20px;
+                height: 55px;
 
                 svg {
                     width: 60px;

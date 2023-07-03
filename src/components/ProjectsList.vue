@@ -10,31 +10,16 @@
             technologies: ["shopify", "javascript", "vue", "sass", "css", "html"],
             repo: "",
             demo: "https://valeryaccesorios.com.ar/",
-            image: "/valery/valery-2.png"
+            image: "/projects_img/valery.png"
         },
         {
-            title: "Titulo",
-            description: "descripcion",
-            technologies: ["tecnologias"],
-            repo: "sisisi",
-            demo: "",
-            image: ""
-        },
-        {
-            title: "Titulo",
-            description: "descripcion",
-            technologies: ["tecnologias"],
-            repo: "sisisi",
-            demo: "https://valeryaccesorios.com.ar/",
-            image: ""
-        },
-        {
-            title: "Titulo",
-            description: "descripcion",
-            technologies: ["tecnologias"],
-            repo: "sisisi",
-            demo: "https://valeryaccesorios.com.ar/",
-            image: ""
+            title: "Mac Center",
+            subtitle: "Contribution",
+            description: "I developed differents features and fix some issues in the Mac Center store. This is a Premium Partner Reseller of Apple, is a big store with multiples shops at Colombia, Perú, Panamá and República Dominicana.",
+            technologies: ["shopify", "javascript", "vue", "sass", "css", "html"],
+            repo: "",
+            demo: "https://mac-center.com/",
+            image: "/projects_img/mac-center.png"
         }
     ]
 

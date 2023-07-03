@@ -50,12 +50,19 @@
             z-index: 0;
             height: 100%;
             width: 70%;
+            overflow: hidden;
+            border-radius: 5px;
+            border: 1px solid var(--gray-color-200);
 
+            &:hover img {
+                transform: scale(1.05);
+            }
+            
             img {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
-                border-radius: 5px;
+                transition: all 300ms ease;
             }
         }
 

@@ -12,6 +12,7 @@
   --font-heading-family: "Anton", sans-serif;
   --font-family: "Raleway", sans-serif;
   --content-width: 1200px;
+  --mobile-breakpoint: 680px;
 }
 
 html {
