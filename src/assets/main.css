@@ -13,3 +13,50 @@
 .d-none {
   display: none;
 }
+
+.text-center {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.title__text {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.section-title .title__point {
+  width: 18px;
+  height: 18px;
+  background: var(--second-color-opacity);
+  border-radius: 100px;
+  position: relative;
+}
+
+.section-title .title__point::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  background: var(--second-color);
+  border-radius: 100px;
+}
